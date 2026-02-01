@@ -1,0 +1,20 @@
+{
+  "name": "growthub-documentation",
+  "version": "1.0.0",
+  "description": "Growthub multi-product platform documentation",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.ts",
+    "./config": "./lib/export-config.ts",
+    "./utils": "./lib/integration-utils.ts",
+    "./components": "./components/index.ts"
+  },
+  "files": ["app/", "components/", "lib/", "public/"],
+  "scripts": {
+    "export": "next build && node scripts/export.js",
+    "export:prod": "NODE_ENV=production npm run export",
+    "generate-manifest": "node scripts/generate-manifest.js",
+    "validate-config": "node scripts/validate-config.js"
+  },
+  "keywords": ["growthub", "documentation", "agent-builder", "content-studio", "export-platform"]
+}
