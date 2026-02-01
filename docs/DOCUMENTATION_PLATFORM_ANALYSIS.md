@@ -90,7 +90,7 @@ AGENT OS PLATFORM
 ### Implementation Approach
 1. Build search index from all `.md`/`.tsx` page content
 2. Add Cmd+K search modal component
-3. Integrate AI search (optional: use Vercel AI SDK)
+3. Integrate AI search (optional: use an AI search SDK)
 4. Cache search results for performance
 5. Track popular searches for analytics
 

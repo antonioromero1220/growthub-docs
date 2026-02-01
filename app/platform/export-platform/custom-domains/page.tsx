@@ -48,8 +48,8 @@ export default function ExportCustomDomainsPage() {
                 <strong>Configure DNS:</strong> In your domain provider (GoDaddy, Namecheap, Cloudflare), add the DNS
                 records provided:
                 <ul className="ml-6 mt-2 space-y-1 list-disc list-inside text-sm">
-                  <li>A Record: Point to 76.76.21.21</li>
-                  <li>CNAME Record (www): Point to cname.vercel-dns.com</li>
+                  <li>A Record: Point to the IP provided in the Growthub dashboard</li>
+                  <li>CNAME Record (www): Point to the CNAME target provided in the Growthub dashboard</li>
                 </ul>
               </li>
               <li>

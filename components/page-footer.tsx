@@ -3,8 +3,10 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Smile, Meh, Frown } from "lucide-react"
 import { useState } from "react"
+import { getPreviousPage, getNextPage } from "@/lib/navigation-config"
 
 interface PageFooterProps {
+  currentPath?: string
   previousPage?: {
     label: string
     url: string
@@ -15,36 +17,52 @@ interface PageFooterProps {
   }
 }
 
-export function PageFooter({ previousPage, nextPage }: PageFooterProps) {
+export function PageFooter({ currentPath, previousPage, nextPage }: PageFooterProps) {
+  const resolved =
+    previousPage && nextPage
+      ? { previousPage, nextPage }
+      : currentPath
+        ? {
+            previousPage: (() => {
+              const prev = getPreviousPage(currentPath)
+              return prev ? { label: prev.title, url: prev.path } : undefined
+            })(),
+            nextPage: (() => {
+              const next = getNextPage(currentPath)
+              return next ? { label: next.title, url: next.path } : undefined
+            })(),
+          }
+        : { previousPage: undefined, nextPage: undefined }
+  const { previousPage: prev, nextPage: next } = resolved
   const [feedback, setFeedback] = useState<"positive" | "neutral" | "negative" | null>(null)
 
   return (
     <div className="mt-12 space-y-8 border-t border-gray-200 pt-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {previousPage ? (
-          <Link href={previousPage.url}>
+        {prev ? (
+          <Link href={prev.url}>
             <Button
               variant="outline"
               className="w-full h-auto py-4 px-4 bg-white border border-gray-300 hover:bg-gray-50 hover:shadow-md text-black rounded-md shadow-sm transition-all flex flex-col items-start justify-start"
             >
               <span className="text-xs text-gray-600 mb-1">Previous</span>
               <span className="font-medium text-black line-clamp-2 text-sm md:text-base break-words text-left">
-                {previousPage.label}
+                {prev.label}
               </span>
             </Button>
           </Link>
         ) : (
           <div />
         )}
-        {nextPage ? (
-          <Link href={nextPage.url}>
+        {next ? (
+          <Link href={next.url}>
             <Button
               variant="outline"
               className="w-full h-auto py-4 px-4 bg-white border border-gray-300 hover:bg-gray-50 hover:shadow-md text-black rounded-md shadow-sm transition-all flex flex-col items-start justify-start"
             >
               <span className="text-xs text-gray-600 mb-1">Next</span>
               <span className="font-medium text-black line-clamp-2 text-sm md:text-base break-words text-left">
-                {nextPage.label}
+                {next.label}
               </span>
             </Button>
           </Link>

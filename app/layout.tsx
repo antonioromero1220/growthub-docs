@@ -62,10 +62,8 @@ export default function RootLayout({
         {/* Preconnect to critical origins */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* Favicon — Growthub logo only (app/icon.png) */}
-        <link rel="icon" type="image/png" href="/icon" />
+        <link rel="icon" href="/icon" type="image/png" sizes="32x32" />
         <link rel="shortcut icon" href="/icon" />
-        
         {/* Logo for social platforms - Force refresh with cache busting */}
         <link rel="image_src" href={`${SITE_CONFIG.url}/OpenGraph.png?v=2`} />
         <meta property="og:image" content={`${SITE_CONFIG.url}/OpenGraph.png?v=2`} />

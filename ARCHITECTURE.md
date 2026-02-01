@@ -40,8 +40,8 @@ growthub-documentation/
 │   └── index.ts                  # Exports index
 │
 ├── public/                       # Static assets
-│   ├── placeholder-logo.png
-│   ├── placeholder.svg
+│   ├── favicon-1.png
+│   ├── OpenGraph.png
 │   └── ... (other assets)
 │
 ├── scripts/

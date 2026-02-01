@@ -1,4 +1,11 @@
 import type React from "react"
+export type NavSubItem = {
+  id: string
+  title: string
+  href: string
+  subItems?: NavSubItem[]
+}
+
 export type NavItem = {
   id: string
   title: string
@@ -6,6 +13,7 @@ export type NavItem = {
   icon?: string
   collapsible?: "icon"
   items?: NavItem[]
+  subItems?: NavSubItem[]
   description?: string
 }
 

@@ -5,6 +5,7 @@ import { Copy } from "lucide-react"
 
 interface BreadcrumbItem {
   label: string
+  href?: string
   url?: string
 }
 
@@ -25,8 +26,8 @@ export function PageHeader({ breadcrumbs, title, showCopy = true }: PageHeaderPr
         <div className="flex items-center gap-2 text-sm mb-6 flex-wrap">
           {breadcrumbs.map((item, idx) => (
             <div key={idx} className="flex items-center gap-2">
-              {item.url ? (
-                <Link href={item.url} className="text-blue-600 hover:text-blue-700 transition-colors font-medium">
+              {(item.href ?? item.url) ? (
+                <Link href={item.href ?? item.url ?? "#"} className="text-blue-600 hover:text-blue-700 transition-colors font-medium">
                   {item.label}
                 </Link>
               ) : (
