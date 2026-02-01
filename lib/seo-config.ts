@@ -11,7 +11,8 @@ export const SITE_CONFIG = {
     "Comprehensive documentation for Growthub Agent OS—one product with six core features: Agent Builder, Content Studio, Export Platform, Knowledge System, Brand Kit System, and Workflow Orchestration.",
   url: "https://docs.growthub.ai",
   mainSiteUrl: "https://growthub.ai",
-  logo: "https://docs.growthub.ai/favicon-1.png",
+  logo: "https://docs.growthub.ai/apple-icon.png", // Use larger logo for schema
+  favicon: "https://docs.growthub.ai/favicon-1.png",
   ogImage: "https://docs.growthub.ai/OpenGraph.png",
   twitterImage: "https://docs.growthub.ai/twitter-share.png",
   socialImage: "https://docs.growthub.ai/social-image-sharing.png",

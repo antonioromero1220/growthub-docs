@@ -69,6 +69,26 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* DNS prefetch for analytics */}
         <link rel="dns-prefetch" href="https://va.vercel-scripts.com" />
+        
+        {/* Favicon & Icons - Multiple formats for maximum compatibility */}
+        <link rel="icon" href="/favicon.ico?v=2" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-1.png?v=2" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/apple-icon.png?v=2" />
+        <link rel="shortcut icon" href="/favicon.ico?v=2" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png?v=2" />
+        <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-icon.png?v=2" />
+        
+        {/* Logo for social platforms - Force refresh with cache busting */}
+        <link rel="image_src" href={`${SITE_CONFIG.url}/OpenGraph.png?v=2`} />
+        <meta property="og:image" content={`${SITE_CONFIG.url}/OpenGraph.png?v=2`} />
+        <meta property="og:image:secure_url" content={`${SITE_CONFIG.url}/OpenGraph.png?v=2`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Growthub Agent OS Documentation" />
+        <meta name="twitter:image" content={`${SITE_CONFIG.url}/twitter-share.png?v=2`} />
+        <meta name="twitter:image:src" content={`${SITE_CONFIG.url}/twitter-share.png?v=2`} />
+        
         {/* Structured Data */}
         <RootSchemas />
       </head>
