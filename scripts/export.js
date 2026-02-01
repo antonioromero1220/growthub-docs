@@ -46,7 +46,7 @@ try {
       "/components",
     ],
     components: ["AppSidebar", "Card", "Badge", "Button", "Input"],
-    assets: ["public/placeholder-logo.png", "public/placeholder.svg"],
+    assets: ["app/icon.png"],
   }
 
   fs.writeFileSync(path.join(config.outputDir, "EXPORT_MANIFEST.json"), JSON.stringify(manifest, null, 2))

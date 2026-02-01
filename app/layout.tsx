@@ -21,13 +21,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   ...defaultMetadata,
   icons: {
-    icon: [
-      { url: "/favicon-1.png", sizes: "32x32", type: "image/png" },
-      { url: "/icon-dark-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/icon-light-32x32.png", sizes: "32x32", type: "image/png", media: "(prefers-color-scheme: dark)" },
-    ],
-    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
-    shortcut: "/favicon-1.png",
+    icon: [{ url: "/icon", sizes: "32x32", type: "image/png" }],
+    shortcut: "/icon",
   },
   manifest: "/manifest.json",
   appleWebApp: {
@@ -67,16 +62,9 @@ export default function RootLayout({
         {/* Preconnect to critical origins */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* DNS prefetch for analytics */}
-        <link rel="dns-prefetch" href="https://va.vercel-scripts.com" />
-        
-        {/* Favicon & Icons - Multiple formats for maximum compatibility */}
-        <link rel="icon" href="/favicon.ico?v=2" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-1.png?v=2" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/apple-icon.png?v=2" />
-        <link rel="shortcut icon" href="/favicon.ico?v=2" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png?v=2" />
-        <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-icon.png?v=2" />
+        {/* Favicon — Growthub logo only (app/icon.png) */}
+        <link rel="icon" type="image/png" href="/icon" />
+        <link rel="shortcut icon" href="/icon" />
         
         {/* Logo for social platforms - Force refresh with cache busting */}
         <link rel="image_src" href={`${SITE_CONFIG.url}/OpenGraph.png?v=2`} />
