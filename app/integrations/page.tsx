@@ -1,14 +1,17 @@
+import type { Metadata } from "next"
 import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
 import { PageFooter } from "@/components/page-footer"
 import { TLDRFAQSection } from "@/components/tldr-faq-section"
+import { generatePageMetadata, PAGE_SEO_CONFIG } from "@/lib/seo-config"
+import { PageSEO } from "@/components/seo/page-seo"
 import Link from "next/link"
 
-export const metadata = {
-  title: "Integrations - Growthub Agent OS",
-  description:
-    "Connect Growthub agents with third-party tools including Asana, HubSpot, GoHighLevel, Shopify, and WordPress.",
-}
+// =============================================================================
+// METADATA - SEO optimized
+// =============================================================================
+
+export const metadata: Metadata = generatePageMetadata(PAGE_SEO_CONFIG["/integrations"])
 
 const integrations = [
   {
@@ -52,6 +55,12 @@ const integrations = [
 export default function IntegrationsPage() {
   return (
     <main className="px-4 py-6 md:px-6">
+      {/* Structured Data */}
+      <PageSEO
+        title="Integrations | Connect Third-Party Tools"
+        description="Connect Growthub with your favorite tools. Integrations with Slack, Asana, HubSpot, GoHighLevel, Shopify, WordPress, and more."
+      />
+
       <PageHeader breadcrumbs={[{ label: "INTEGRATIONS", href: "/integrations" }]} title="Integrations" />
 
       <PageContent description="Connect your Growthub agents with third-party tools and services. Export leads to your CRM, publish content to your website, and automate workflows across platforms.">

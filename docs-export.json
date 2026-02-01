@@ -1,7 +1,7 @@
 {
   "name": "growthub-documentation",
   "version": "1.0.0",
-  "description": "Growthub multi-product platform documentation",
+  "description": "Growthub Agent OS documentation—one product, six core features",
   "type": "module",
   "exports": {
     ".": "./lib/index.ts",

@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Platform | Growthub Documentation",
-  description: "Explore Growthub's core products and features",
+  description: "Explore Growthub's core features",
 }
 
 export default function Platform() {
@@ -12,15 +12,15 @@ export default function Platform() {
         <div className="space-y-2">
           <h1 className="text-4xl font-bold">Platform Overview</h1>
           <p className="text-lg text-muted-foreground">
-            Growthub's multi-product convergence creates a powerful ecosystem where every component strengthens the
+            Growthub is one product: six core features that create a powerful ecosystem where every feature strengthens the
             others through shared Brand Kits, Knowledge, and Agent Skills.
           </p>
         </div>
 
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-bold mb-4">The Multi-Product Moat</h2>
+          <h2 className="text-2xl font-bold mb-4">One Product, Six Core Features</h2>
           <p className="text-muted-foreground mb-6">
-            Unlike competitors offering single-purpose tools, Growthub combines five distinct product categories into
+            Unlike single-purpose tools, Growthub is one product with six core features in
             one orchestration layer, creating network effects where every feature enhances every other feature.
           </p>
 
@@ -52,9 +52,8 @@ export default function Platform() {
           <h2 className="text-2xl font-bold mb-4 mt-8">Think of Growthub As...</h2>
           <p className="text-muted-foreground italic bg-accent/50 p-4 rounded-lg border border-primary/20">
             A digital Swiss Army Knife with a brain. While competitors offer just a "blade" (Agent Builder) or just a
-            "magnifying glass" (Knowledge System), Growthub provides the entire multi-tool, where every specialized
-            instrument shares the same "power source" (your Brand Kit and Knowledge Vault) to ensure they all work
-            toward the same goal.
+            "magnifying glass" (Knowledge System), Growthub is one product where every core feature shares the same
+            "power source" (your Brand Kit and Knowledge Vault) so they all work toward the same goal.
           </p>
         </div>
       </div>

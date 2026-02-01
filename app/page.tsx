@@ -2,11 +2,49 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, Zap, Layout, Share2, Book, Palette, Workflow } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { generatePageMetadata, PAGE_SEO_CONFIG, SITE_CONFIG } from "@/lib/seo-config"
+import { JsonLd } from "@/components/seo/json-ld"
+
+// =============================================================================
+// METADATA - Full SEO for homepage
+// =============================================================================
 
 export const metadata: Metadata = {
-  title: "Growthub Agent OS | Multi-Product B2B SaaS Platform",
-  description:
-    "Comprehensive documentation for Growthub Agent OS - the autonomous B2B SaaS growth engine combining Agent Builder, Content Studio, Export Platform, Knowledge System, Brand Kit System, and Workflow Orchestration.",
+  ...generatePageMetadata(PAGE_SEO_CONFIG["/"]),
+  alternates: {
+    canonical: SITE_CONFIG.url,
+  },
+}
+
+// Home page specific schema
+const homePageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${SITE_CONFIG.url}/#webpage`,
+  url: SITE_CONFIG.url,
+  name: "Growthub Agent OS Documentation",
+  description: PAGE_SEO_CONFIG["/"].description,
+  isPartOf: {
+    "@id": `${SITE_CONFIG.url}/#website`,
+  },
+  about: {
+    "@id": `${SITE_CONFIG.url}/#software`,
+  },
+  primaryImageOfPage: {
+    "@type": "ImageObject",
+    url: `${SITE_CONFIG.url}/OpenGraph.png`,
+  },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: SITE_CONFIG.url,
+      },
+    ],
+  },
 }
 
 const features = [
@@ -51,6 +89,8 @@ const features = [
 export default function Home() {
   return (
     <main className="flex-1 overflow-auto">
+      {/* Structured Data for SEO & AEO */}
+      <JsonLd data={homePageSchema} />
       <section className="mx-auto max-w-4xl space-y-8 px-4 py-12 sm:px-6 sm:py-14 md:px-6 md:py-16">
         <div className="space-y-4">
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight text-balance">
@@ -60,7 +100,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl">
-            The Multi-Product Convergence Engine. Harness the power of six integrated products unified by Brand Kits,
+            One platform, six core features. Harness Agent Builder, Content Studio, Export, Knowledge System, Brand Kit, and Workflow—unified by Brand Kits,
             Knowledge Items, and Agent Skills—creating a natural flywheel effect where every feature makes every other
             feature more valuable.
           </p>
@@ -88,8 +128,8 @@ export default function Home() {
           <div className="space-y-3">
             <h2 className="text-3xl font-bold text-black">What is Growthub?</h2>
             <p className="text-lg text-black leading-relaxed">
-              Growthub is an autonomous B2B SaaS growth engine that combines five integrated products into a unified
-              platform. By leveraging Brand Kits, Knowledge Items, and Agent Skills, Growthub creates a natural flywheel
+Growthub is an autonomous B2B SaaS growth engine—one product with six core features working as a unified
+            platform. By leveraging Brand Kits, Knowledge Items, and Agent Skills, Growthub creates a natural flywheel
               where each feature enhances every other feature, enabling businesses to deploy custom agents in minutes.
             </p>
           </div>
@@ -113,8 +153,8 @@ export default function Home() {
 
       <section className="mx-auto max-w-4xl space-y-8 px-4 py-12 sm:px-6 sm:py-14 md:px-6 md:py-16">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold">Core Products</h2>
-          <p className="text-muted-foreground">Explore each product and its capabilities</p>
+          <h2 className="text-3xl font-bold">Core Features</h2>
+          <p className="text-muted-foreground">Explore each feature and its capabilities</p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">

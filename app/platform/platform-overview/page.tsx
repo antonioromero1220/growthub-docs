@@ -18,11 +18,11 @@ export default function PlatformOverview() {
           showCopy={true}
         />
 
-        <PageContent description="Growthub Agent OS is a unified orchestration layer combining five distinct product categories into one cohesive growth engine.">
+        <PageContent description="Growthub Agent OS is one product—a unified orchestration layer with six core features that work together as a single growth engine.">
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold">The Five Core Products</h2>
+            <h2 className="text-2xl font-bold">The Six Core Features</h2>
             <p className="text-muted-foreground mb-6">
-              Each product solves a specific part of the growth problem, but their true power emerges when combined
+              Each feature solves a specific part of the growth problem; their true power emerges when combined
               through a shared layer of Brand Kits, Knowledge Items, and Agent Skills.
             </p>
 
@@ -92,7 +92,7 @@ export default function PlatformOverview() {
               they feed learnings back into the Knowledge System.
             </p>
             <p className="text-muted-foreground">
-              This creates a natural compounding effect where each product makes every other product more powerful.
+              This creates a natural compounding effect where each feature makes every other feature more powerful.
             </p>
           </section>
         </PageContent>

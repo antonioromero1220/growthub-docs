@@ -2,15 +2,25 @@ import type { Metadata } from "next"
 import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
 import { PageFooter } from "@/components/page-footer"
+import { TLDRFAQSection } from "@/components/tldr-faq-section"
+import { generatePageMetadata, PAGE_SEO_CONFIG } from "@/lib/seo-config"
+import { PageSEO } from "@/components/seo/page-seo"
 
-export const metadata: Metadata = {
-  title: "Content Studio | Growthub Documentation",
-  description: "Create multi-modal content with AI-powered generation and brand training",
-}
+// =============================================================================
+// METADATA - SEO optimized
+// =============================================================================
+
+export const metadata: Metadata = generatePageMetadata(PAGE_SEO_CONFIG["/platform/content-studio"])
 
 export default function ContentStudio() {
   return (
     <main className="mx-auto max-w-4xl flex-1 overflow-auto">
+      {/* Structured Data */}
+      <PageSEO
+        title="Content Studio | AI-Powered Content Generation"
+        description="Generate multi-modal content with AI. Create images, videos, and text with Brand Kit consistency, batch workflows, and RLHF training for brand alignment."
+      />
+
       <div className="space-y-8 px-6 py-8">
         <PageHeader
           breadcrumbs={[
@@ -105,6 +115,8 @@ export default function ContentStudio() {
             </ol>
           </section>
         </PageContent>
+
+        <TLDRFAQSection pageKey="content-studio" />
 
         <PageFooter />
       </div>

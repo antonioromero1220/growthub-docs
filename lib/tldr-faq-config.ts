@@ -5,6 +5,36 @@ export interface TLDRFAQPage {
 }
 
 export const tldrFaqContent: Record<string, TLDRFAQPage> = {
+  "getting-started": {
+    title: "Getting Started",
+    tldr: "Quick start guide to Growthub Agent OS - create Brand Kits, build custom agents, generate content, and deploy in minutes using the unified growth platform.",
+    faqs: [
+      {
+        question: "What is Growthub Agent OS?",
+        answer:
+          "Growthub is the first fully autonomous B2B SaaS growth engine—one product with six core features: Agent Builder, Content Studio, Export Platform, Knowledge System, Brand Kit System, and Workflow Orchestration—in a unified orchestration layer.",
+        keywords: ["Growthub", "Agent OS", "B2B SaaS", "growth engine"],
+      },
+      {
+        question: "How do I create my first agent?",
+        answer:
+          "Go to Agent Builder, select a template or start from scratch, configure your LLM model (40+ options), add custom skills, and deploy. Brand Kit and Knowledge Items are automatically available to your agent.",
+        keywords: ["create agent", "Agent Builder", "first steps", "setup"],
+      },
+      {
+        question: "What are Brand Kits?",
+        answer:
+          "Brand Kits are reusable brand profiles containing voice guidelines, visual assets, and target customer profiles (ICP). They flow globally across the platform ensuring consistent brand experience.",
+        keywords: ["Brand Kits", "brand consistency", "voice guidelines", "visual assets"],
+      },
+      {
+        question: "How does the flywheel effect work?",
+        answer:
+          "Every feature enhances every other feature through shared Brand Kits, Knowledge Items, and Agent Skills. Content generated today trains tomorrow's agents. Knowledge shared across teams improves all agent outputs.",
+        keywords: ["flywheel", "integration", "shared resources", "synergy"],
+      },
+    ],
+  },
   "knowledge-system": {
     title: "Knowledge System",
     tldr: "Unified knowledge repository shared across teams and agents for collective intelligence, summaries, and audio generation.",
@@ -91,7 +121,7 @@ export const tldrFaqContent: Record<string, TLDRFAQPage> = {
   },
   "workflow-orchestration": {
     title: "Workflow Orchestration",
-    tldr: "Visual workflow builder for complex multi-step automation, conditional logic, and tool integration across all Growthub products.",
+    tldr: "Visual workflow builder for complex multi-step automation, conditional logic, and tool integration across all Growthub features.",
     faqs: [
       {
         question: "What is Workflow Orchestration?",

@@ -42,7 +42,7 @@ function generateTLDR(slug: string, context: { category: string; keywords: strin
     "export-platform":
       "Deploy AI agents as forms, chatbots, landing pages with lead capture, CRM integrations, and multi-channel publishing.",
     "workflow-orchestration":
-      "Visual workflow builder for complex multi-step automation, conditional logic, and tool integration across all Growthub products.",
+      "Visual workflow builder for complex multi-step automation, conditional logic, and tool integration across all Growthub features.",
     "brand-kit-system":
       "Centralized brand management system ensuring visual and tonal consistency across all generated content and exported agents.",
   }

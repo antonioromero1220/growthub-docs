@@ -11,7 +11,7 @@ export const exportConfig = {
   project: {
     name: "Growthub Documentation",
     version: "1.0.0",
-    description: "Multi-product B2B SaaS platform documentation",
+    description: "Growthub Agent OS documentation—one product, six core features",
     author: "Growthub Team",
   },
 
@@ -42,7 +42,7 @@ export const exportConfig = {
   // SEO configuration
   seo: {
     siteName: "Growthub Documentation",
-    description: "Comprehensive documentation for Growthub multi-product platform",
+    description: "Comprehensive documentation for Growthub Agent OS",
     keywords: ["Growthub", "Agent Builder", "Content Studio", "Documentation"],
     socialImage: "/og-image.jpg",
   },

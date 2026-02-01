@@ -1,4 +1,5 @@
-import type { Metadata } from "next"
+"use client"
+
 import { Database, FileText, Headphones } from "lucide-react"
 import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
@@ -6,15 +7,19 @@ import { PageFooter } from "@/components/page-footer"
 import { FeatureCard } from "@/components/feature-card"
 import { Card } from "@/components/ui/card"
 import { TLDRFAQSection } from "@/components/tldr-faq-section"
+import { PageSEO } from "@/components/seo/page-seo"
 
-export const metadata: Metadata = {
-  title: "Knowledge System | Growthub Documentation",
-  description: "Share collective intelligence across teams and agents",
-}
+// Note: Metadata moved to layout or handled via PageSEO for client components
 
 export default function KnowledgeSystem() {
   return (
     <main className="mx-auto max-w-4xl flex-1 overflow-auto">
+      {/* Structured Data */}
+      <PageSEO
+        title="Knowledge System | Shared Intelligence Platform"
+        description="Unified knowledge repository for teams and agents. Thread summaries, audio generation, multi-tenant sharing, and collective intelligence."
+      />
+
       <div className="space-y-8 px-6 py-8">
         <PageHeader
           breadcrumbs={[

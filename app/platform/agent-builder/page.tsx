@@ -3,15 +3,24 @@ import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
 import { PageFooter } from "@/components/page-footer"
 import { TLDRFAQSection } from "@/components/tldr-faq-section"
+import { generatePageMetadata, PAGE_SEO_CONFIG } from "@/lib/seo-config"
+import { PageSEO } from "@/components/seo/page-seo"
 
-export const metadata: Metadata = {
-  title: "Agent Builder | Growthub Documentation",
-  description: "Create custom marketing and operational agents with the Agent Builder",
-}
+// =============================================================================
+// METADATA - SEO optimized
+// =============================================================================
+
+export const metadata: Metadata = generatePageMetadata(PAGE_SEO_CONFIG["/platform/agent-builder"])
 
 export default function AgentBuilder() {
   return (
     <main className="mx-auto max-w-4xl flex-1 overflow-auto">
+      {/* Structured Data */}
+      <PageSEO
+        title="Agent Builder | Create Custom AI Agents"
+        description="Build custom marketing and operational AI agents with no code. Access 40+ LLM models, pre-built templates, custom skills, and seamless deployment."
+      />
+
       <div className="space-y-8 px-6 py-8">
         <PageHeader
           breadcrumbs={[{ label: "AGENT OS PLATFORM", url: "/platform/platform-overview" }, { label: "Agent Builder" }]}
@@ -71,7 +80,7 @@ export default function AgentBuilder() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-black">Integration with Other Products</h2>
+            <h2 className="text-2xl font-bold text-black">Integration with Other Features</h2>
             <p className="text-base leading-relaxed text-gray-800">
               Agents automatically inherit your Brand Kit voice and visual guidelines. They access Knowledge Items for
               context, and their capabilities are determined by available Agent Skills. Once built, deploy them via the

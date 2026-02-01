@@ -2,15 +2,25 @@ import type { Metadata } from "next"
 import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
 import { PageFooter } from "@/components/page-footer"
+import { generatePageMetadata, PAGE_SEO_CONFIG } from "@/lib/seo-config"
+import { PageSEO } from "@/components/seo/page-seo"
+import { TLDRFAQSection } from "@/components/tldr-faq-section"
 
-export const metadata: Metadata = {
-  title: "Quick Start | Growthub Documentation",
-  description: "Get started with Growthub in minutes with our quick start guide",
-}
+// =============================================================================
+// METADATA - SEO optimized
+// =============================================================================
+
+export const metadata: Metadata = generatePageMetadata(PAGE_SEO_CONFIG["/getting-started"])
 
 export default function GettingStarted() {
   return (
     <main className="flex-1 overflow-auto">
+      {/* Structured Data */}
+      <PageSEO
+        title="Getting Started with Growthub Agent OS"
+        description="Quick start guide for Growthub Agent OS. Learn how to create your first AI agent, set up Brand Kits, configure Knowledge Bases, and deploy content in minutes."
+      />
+
       <div className="mx-auto max-w-4xl space-y-8 px-6 py-8">
         <PageHeader
           breadcrumbs={[{ label: "Documentation" }, { label: "Quick Start" }]}
@@ -22,8 +32,8 @@ export default function GettingStarted() {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold">What is Growthub?</h2>
             <p className="text-base leading-relaxed">
-              Growthub is the first fully autonomous B2B SaaS growth engine that combines five distinct product
-              categories into one unified orchestration layer. The integration layer allows Brand Kits, Knowledge Items,
+              Growthub is the first fully autonomous B2B SaaS growth engine—one product with six core
+              features in one unified orchestration layer. The integration layer allows Brand Kits, Knowledge Items,
               and Agent Skills to flow seamlessly across all tools, creating a natural flywheel effect.
             </p>
           </section>
@@ -35,7 +45,7 @@ export default function GettingStarted() {
                 <h3 className="font-semibold mb-2">1. Brand Kits</h3>
                 <p className="text-muted-foreground">
                   Create unlimited brand profiles with target customer profiles (ICP), voice guidelines, and visual
-                  assets. These flow globally across all products.
+                  assets. These flow globally across the platform.
                 </p>
               </div>
               <div>
@@ -88,6 +98,8 @@ export default function GettingStarted() {
             </ol>
           </section>
         </PageContent>
+
+        <TLDRFAQSection pageKey="getting-started" />
 
         <PageFooter
           previousPage={{ label: "Home", url: "/" }}
