@@ -21,8 +21,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   ...defaultMetadata,
   icons: {
-    icon: [{ url: "/icon", sizes: "32x32", type: "image/png" }],
-    shortcut: "/icon",
+    icon: [{ url: "/favicon-1.png", sizes: "32x32", type: "image/png" }],
+    shortcut: "/favicon-1.png",
   },
   manifest: "/manifest.json",
   appleWebApp: {
@@ -62,8 +62,8 @@ export default function RootLayout({
         {/* Preconnect to critical origins */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="icon" href="/icon" type="image/png" sizes="32x32" />
-        <link rel="shortcut icon" href="/icon" />
+        <link rel="icon" href="/favicon-1.png" type="image/png" sizes="32x32" />
+        <link rel="shortcut icon" href="/favicon-1.png" />
         {/* Logo for social platforms - Force refresh with cache busting */}
         <link rel="image_src" href={`${SITE_CONFIG.url}/OpenGraph.png?v=2`} />
         <meta property="og:image" content={`${SITE_CONFIG.url}/OpenGraph.png?v=2`} />
