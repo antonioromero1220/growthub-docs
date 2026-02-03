@@ -5,6 +5,7 @@ import { PageFooter } from "@/components/page-footer"
 import { generatePageMetadata, PAGE_SEO_CONFIG } from "@/lib/seo-config"
 import { PageSEO } from "@/components/seo/page-seo"
 import { TLDRFAQSection } from "@/components/tldr-faq-section"
+import { VideoPlayer } from "@/components/video-player"
 
 // =============================================================================
 // METADATA - SEO optimized
@@ -29,6 +30,11 @@ export default function GettingStarted() {
         />
 
         <PageContent description="Get up and running with Growthub in just a few minutes. This guide covers the essentials to understand the platform's core concepts.">
+          <VideoPlayer 
+            url="https://youtu.be/DArAgdkpZSc?si=JQ7T0RYgFGIKuTIP" 
+            title="Build Your AI Content Engine in Minutes!"
+            caption="Learn how to set up your foundational AI content engine, including Agents, Skills, and the Awareness Matrix."
+          />
           <section className="space-y-4">
             <h2 className="text-2xl font-bold">What is Growthub?</h2>
             <p className="text-base leading-relaxed">

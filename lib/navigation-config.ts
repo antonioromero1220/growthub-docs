@@ -80,6 +80,11 @@ export const navigationConfig: NavItem[] = [
             title: "Brand Asset Integration",
             href: "/platform/content-studio/brand-assets",
           },
+          {
+            id: "ghl-social-posting-studio",
+            title: "Social Posting",
+            href: "/integrations/gohighlevel/social-posting",
+          },
         ],
       },
       {
@@ -174,6 +179,11 @@ export const navigationConfig: NavItem[] = [
             title: "Custom Domains",
             href: "/platform/export-platform/custom-domains",
           },
+          {
+            id: "ghl-social-posting-export",
+            title: "Social Posting",
+            href: "/integrations/gohighlevel/social-posting",
+          },
         ],
       },
       {
@@ -240,6 +250,13 @@ export const navigationConfig: NavItem[] = [
             id: "gohighlevel",
             title: "GoHighLevel",
             href: "/integrations/gohighlevel",
+            subItems: [
+              {
+                id: "ghl-social-posting-integration",
+                title: "Social Posting",
+                href: "/integrations/gohighlevel/social-posting",
+              },
+            ],
           },
           {
             id: "shopify",
@@ -320,6 +337,7 @@ export const pageSequence = [
   "/integrations/asana",
   "/integrations/hubspot",
   "/integrations/gohighlevel",
+  "/integrations/gohighlevel/social-posting",
   "/integrations/shopify",
   "/integrations/wordpress",
   "/api-reference",

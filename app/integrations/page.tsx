@@ -5,6 +5,7 @@ import { PageFooter } from "@/components/page-footer"
 import { TLDRFAQSection } from "@/components/tldr-faq-section"
 import { generatePageMetadata, PAGE_SEO_CONFIG } from "@/lib/seo-config"
 import { PageSEO } from "@/components/seo/page-seo"
+import { VideoPlayer } from "@/components/video-player"
 import Link from "next/link"
 
 // =============================================================================

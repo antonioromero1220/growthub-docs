@@ -40,7 +40,7 @@ export function StickyHeader() {
             <Menu className="h-5 w-5 text-black" strokeWidth={2.5} />
           </Button>
 
-          <Image src="/images/img-0014.png" alt="Growthub" width={36} height={36} className="rounded-[5px]" />
+          <Image src="/gh-1.png" alt="Growthub" width={36} height={36} className="rounded-[5px]" />
         </div>
 
         <Button

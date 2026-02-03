@@ -40,8 +40,9 @@ growthub-documentation/
 │   └── index.ts                  # Exports index
 │
 ├── public/                       # Static assets
-│   ├── favicon-1.png
-│   ├── OpenGraph.png
+│   ├── gh-favicon.png
+│   ├── gh-1.png
+│   ├── gh-2.jpg
 │   └── ... (other assets)
 │
 ├── scripts/

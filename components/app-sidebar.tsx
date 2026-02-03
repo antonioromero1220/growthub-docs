@@ -103,7 +103,7 @@ export function AppSidebar() {
       <SidebarHeader className="p-4 border-b border-sidebar-border">
         <Link href="/" className="flex items-center gap-3 mb-4">
           <div className="relative w-12 h-12 flex-shrink-0">
-            <Image src="/images/img-0014.png" alt="Growthub" fill className="object-contain" sizes="48px" />
+            <Image src="/gh-1.png" alt="Growthub" fill className="object-contain" sizes="48px" />
           </div>
           <div className="flex flex-col">
             <span className="font-semibold text-base gh-gradient-text">Growthub</span>

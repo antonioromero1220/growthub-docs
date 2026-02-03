@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
 import { TLDRFAQSection } from "@/components/tldr-faq-section"
 import { PageFooter } from "@/components/page-footer"
+import { VideoPlayer } from "@/components/video-player"
 
 export const metadata: Metadata = {
   title: "Brand Asset Integration | Growthub Documentation",
@@ -25,6 +26,11 @@ export default function BrandAssets() {
         />
 
         <PageContent description="Centralize logos, product photos, and visual references for automatic integration into all AI-generated images and videos.">
+          <VideoPlayer 
+            url="https://youtu.be/fokR8O19DIA?si=gPl--l3NcKm4k-aD" 
+            title="How to Hijack Competitor Ads Using AI"
+            caption="Use competitor ad references as visual hooks for your own AI-generated content."
+          />
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-black">What are Brand Assets?</h2>
             <p className="text-gray-700 leading-relaxed">

@@ -44,7 +44,7 @@ export const exportConfig = {
     siteName: "Growthub Documentation",
     description: "Comprehensive documentation for Growthub Agent OS",
     keywords: ["Growthub", "Agent Builder", "Content Studio", "Documentation"],
-    socialImage: "/og-image.jpg",
+    socialImage: "/gh-2.jpg",
   },
 
   // Feature flags for documentation sections

@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
 import { PageFooter } from "@/components/page-footer"
+import { VideoPlayer } from "@/components/video-player"
 
 export const metadata: Metadata = {
   title: "Platform Overview | Growthub Documentation",
@@ -19,6 +20,11 @@ export default function PlatformOverview() {
         />
 
         <PageContent description="Growthub Agent OS is one product—a unified orchestration layer with six core features that work together as a single growth engine.">
+          <VideoPlayer 
+            url="https://youtu.be/DArAgdkpZSc?si=JQ7T0RYgFGIKuTIP" 
+            title="Growthub Platform Overview"
+            caption="A deep dive into the foundational architecture of the Growthub Agent OS."
+          />
           <section className="space-y-4">
             <h2 className="text-2xl font-bold">The Six Core Features</h2>
             <p className="text-muted-foreground mb-6">

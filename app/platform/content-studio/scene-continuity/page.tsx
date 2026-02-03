@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
 import { TLDRFAQSection } from "@/components/tldr-faq-section"
 import { PageFooter } from "@/components/page-footer"
+import { VideoPlayer } from "@/components/video-player"
 
 export const metadata: Metadata = {
   title: "Scene Continuity | Growthub Documentation",
@@ -24,6 +25,12 @@ export default function SceneContinuity() {
           showCopy={true}
         />
 
+        <VideoPlayer 
+          url="https://youtu.be/hRD-x4N-3y8?si=nz0-gt85nkSqDIId" 
+          title="Multi-Scene Video Continuity"
+          caption="Master visual consistency across multiple scenes with AI-powered continuity."
+        />
+
         <PageContent description="Replicate winning ad creatives and extend videos seamlessly using reference frames, workflow binding, and performance-driven insights.">
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-black">What is Scene Continuity?</h2>
@@ -37,6 +44,11 @@ export default function SceneContinuity() {
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-black">How to Clone Winning Ads</h2>
+            <VideoPlayer 
+              url="https://youtu.be/hRD-x4N-3y8?si=tCLPjJa4vwhK1xsY" 
+              title="How to Clone Winning Video Ads"
+              caption="Learn the exact process for cloning high-performing video ads in minutes."
+            />
             <div className="space-y-3">
               <div className="p-4 border border-gray-200 rounded-lg bg-white shadow-sm">
                 <h3 className="font-semibold text-black mb-2">Step 1: Identify Winning Creatives</h3>

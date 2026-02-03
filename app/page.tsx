@@ -32,7 +32,7 @@ const homePageSchema = {
   },
   primaryImageOfPage: {
     "@type": "ImageObject",
-    url: `${SITE_CONFIG.url}/OpenGraph.png`,
+    url: `${SITE_CONFIG.url}${SITE_CONFIG.ogImage}`,
   },
   breadcrumb: {
     "@type": "BreadcrumbList",

@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
 import { PageFooter } from "@/components/page-footer"
 import { TLDRFAQSection } from "@/components/tldr-faq-section"
+import { VideoPlayer } from "@/components/video-player"
 
 export const metadata: Metadata = {
   title: "CMS Publisher Node | Growthub Documentation",
@@ -24,6 +25,11 @@ export default function CMSPublisher() {
         />
 
         <PageContent description="Automated content publishing to CMS platforms with Shopify integration, preview URLs, and enterprise custom domain support.">
+          <VideoPlayer 
+            url="https://youtu.be/j6n1Q-rrE3Y?si=c7epwxZu585_oFaK" 
+            title="Build a Fully Automated Multi-Agent Pipeline"
+            caption="Automate your SEO and blogging pipeline with intelligent multi-agent coordination."
+          />
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-black">What is the CMS Publisher?</h2>
             <p className="text-gray-700 leading-relaxed">

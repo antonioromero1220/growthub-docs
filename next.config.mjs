@@ -7,7 +7,7 @@ const nextConfig = {
     unoptimized: true,
   },
   async rewrites() {
-    return [{ source: "/favicon.ico", destination: "/favicon-1.png" }]
+    return [{ source: "/favicon.ico", destination: "/gh-favicon.png" }]
   },
 }
 

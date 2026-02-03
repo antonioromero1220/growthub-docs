@@ -12,6 +12,8 @@ import { PageSEO } from "@/components/seo/page-seo"
 
 export const metadata: Metadata = generatePageMetadata(PAGE_SEO_CONFIG["/platform/content-studio"])
 
+import { VideoPlayer } from "@/components/video-player"
+
 export default function ContentStudio() {
   return (
     <main className="mx-auto max-w-4xl flex-1 overflow-auto">
@@ -32,6 +34,11 @@ export default function ContentStudio() {
         />
 
         <PageContent description="AI-powered content generation for images and videos with Brand Kit consistency, scene continuity, and multi-modal workflows.">
+          <VideoPlayer 
+            url="https://youtu.be/-ydkwdAPxNI?si=UZ5i9xsWHPYOR7K9" 
+            title="Ethically Hijack Content Using AI"
+            caption="Discover how to ethically leverage existing content for your brand's organic social strategy."
+          />
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-black">Content Generation Tools</h2>
             <div className="grid gap-4">

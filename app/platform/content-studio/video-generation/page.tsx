@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
 import { TLDRFAQSection } from "@/components/tldr-faq-section"
 import { PageFooter } from "@/components/page-footer"
+import { VideoPlayer } from "@/components/video-player"
 
 export const metadata: Metadata = {
   title: "Video Generation | Growthub Documentation",
@@ -25,6 +26,11 @@ export default function VideoGeneration() {
         />
 
         <PageContent description="Generate high-quality video ads with AI using Sora 2, VO 3.1, and scene continuity workflows for UGC testimonials and product demonstrations.">
+          <VideoPlayer 
+            url="https://youtu.be/KJOdWjPY_gY?si=1NAVM7XMNUS-mdkw" 
+            title="Multi-Agent Video Ads"
+            caption="Build professional video ads in just 5 minutes using multi-agent workflows."
+          />
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-black">Supported AI Models</h2>
             <div className="space-y-3">

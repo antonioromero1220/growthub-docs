@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
 import { TLDRFAQSection } from "@/components/tldr-faq-section"
 import { PageFooter } from "@/components/page-footer"
+import { VideoPlayer } from "@/components/video-player"
 
 export const metadata: Metadata = {
   title: "Image Generation | Growthub Documentation",
@@ -25,6 +26,11 @@ export default function ImageGeneration() {
         />
 
         <PageContent description="Create branded images for ads, creative briefs, and product mockups with AI-powered generation and Brand Kit consistency.">
+          <VideoPlayer 
+            url="https://youtu.be/khh3D0YXn4o?si=lY7csAyjfpECvxHJ" 
+            title="Generate 30 Days of Brand Content in 60 Seconds"
+            caption="Learn how to automate a month's worth of on-brand content in under a minute."
+          />
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-black">Three Ways to Generate Images</h2>
             <div className="space-y-3">
