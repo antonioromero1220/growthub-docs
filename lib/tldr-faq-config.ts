@@ -581,6 +581,192 @@ export const tldrFaqContent: Record<string, TLDRFAQPage> = {
       },
     ],
   },
+  "unified-chat": {
+    title: "Unified Chat Interface",
+    tldr: "The single consolidated surface for all Growthub AI interactions. Autopilot and sandbox are deprecated — all capabilities now live in one workflow chat with model switching, custom agent @mentions, project folders, and full thread management.",
+    faqs: [
+      {
+        question: "What is the Unified Chat Interface?",
+        answer:
+          "The Unified Chat Interface is the single surface in Growthub where all AI interactions happen. It replaces the legacy autopilot and sandbox with one consolidated workflow chat that supports model selection, custom agent @mentions, project folders, and thread management.",
+        keywords: ["unified chat", "workflow chat", "autopilot replacement", "consolidated interface"],
+      },
+      {
+        question: "Are autopilot and sandbox still available?",
+        answer:
+          "No. Autopilot and sandbox have been deprecated and consolidated into the unified workflow chat. All their capabilities — including advanced agent execution and iterative generation — are now available from a single chat surface.",
+        keywords: ["autopilot deprecated", "sandbox deprecated", "migration", "consolidation"],
+      },
+      {
+        question: "What can I do from the Unified Chat Interface?",
+        answer:
+          "You can select AI models (GPT-5 Mini, Gemini 3.0 Flash, Claude Haiku 4.5 and more), @mention custom agents, organize conversations into project folders, rename/archive/download/delete threads, and access all platform features in one place.",
+        keywords: ["chat capabilities", "model selection", "agent mention", "thread management"],
+      },
+      {
+        question: "What does 'How Can I Help?' mean on the welcome screen?",
+        answer:
+          "The welcome screen is the homepage of your workflow chat. It shows your recent projects, recent chat threads, and a prompt input so you can start a new conversation or continue an existing one immediately.",
+        keywords: ["welcome screen", "home", "recent chats", "recent projects"],
+      },
+    ],
+  },
+  "model-selection": {
+    title: "Model Selection",
+    tldr: "Pick from free and paid AI models directly in the chat toolbar. GPT-5 Mini (Web Search + Reasoning), Gemini 3.0 Flash (Reasoning + Coding), and Claude Haiku 4.5 (Reasoning + Coding + Documents) are available with zero configuration.",
+    faqs: [
+      {
+        question: "Which AI models are available in Growthub?",
+        answer:
+          "Free models include GPT-5 Mini (OpenAI, with Web Search and Reasoning), Gemini 3.0 Flash (Google, with Reasoning and Coding), and Claude Haiku 4.5 (Anthropic, with Reasoning, Coding, and Documents). Additional paid models are available by upgrading your plan.",
+        keywords: ["GPT-5 Mini", "Gemini 3.0 Flash", "Claude Haiku 4.5", "free models", "AI models"],
+      },
+      {
+        question: "How do I switch models in the chat?",
+        answer:
+          "Click the model name in the chat toolbar (e.g., 'GPT-5 Mini'). A dropdown will appear with all available models. Use the Search field to filter by name, then click a model to select it. The change takes effect immediately on your next message.",
+        keywords: ["switch model", "model dropdown", "chat toolbar", "model picker"],
+      },
+      {
+        question: "What is the Reasoning capability?",
+        answer:
+          "Reasoning-enabled models think through complex problems step by step before responding, producing more accurate and nuanced answers. Use Reasoning for analysis, multi-step planning, and tasks that benefit from chain-of-thought logic.",
+        keywords: ["reasoning", "chain-of-thought", "complex tasks", "step-by-step"],
+      },
+      {
+        question: "What is Web Search capability?",
+        answer:
+          "Models with Web Search can retrieve real-time information from the internet to supplement their responses. Useful for current events, recent data, or any query that benefits from up-to-date information beyond the model's training cutoff.",
+        keywords: ["web search", "real-time data", "internet access", "current events"],
+      },
+      {
+        question: "When should I use Documents capability?",
+        answer:
+          "Use models with Documents capability (like Claude Haiku 4.5) when you need to upload and analyze files such as PDFs, spreadsheets, or text documents. The model reads the file contents and answers questions or generates content based on them.",
+        keywords: ["documents", "file upload", "PDF analysis", "document processing"],
+      },
+      {
+        question: "When a custom agent is active, does the model selector disappear?",
+        answer:
+          "Yes. When you @mention a custom agent, the model selector is hidden because the agent's configured model takes over. The agent's instructions and model drive the conversation. Deselect the agent to return to manual model selection.",
+        keywords: ["custom agent", "model selector", "agent model", "agent active"],
+      },
+    ],
+  },
+  "custom-agents": {
+    title: "Custom Agents",
+    tldr: "Specialized AI agents accessible via @mention in any chat. Includes Onboarding Agent, Copywriting Agent, Slides Generation Agent, Content Agent, and YouTube Thumbnail Agent — each pre-configured with expert instructions and tools.",
+    faqs: [
+      {
+        question: "What are custom agents in Growthub?",
+        answer:
+          "Custom agents are pre-built or user-created AI agents with specialized instructions, tools, and model configurations. They are available in the unified chat and can be activated by typing @ to open the agent selector.",
+        keywords: ["custom agents", "AI agents", "specialized agents", "agent selector"],
+      },
+      {
+        question: "How do I use an agent in chat?",
+        answer:
+          "Type @ in the chat input to open the agent selector. You can search agents by name or scroll through the list. Select an agent to activate it — its icon will appear in the toolbar confirming it is active. Your message is then processed by that agent.",
+        keywords: ["@mention", "agent selector", "activate agent", "use agent"],
+      },
+      {
+        question: "What agents are available out of the box?",
+        answer:
+          "Onboarding Agent (platform setup guidance), Copywriting Agent (marketing copy and messaging), Slides Generation Agent (presentation decks), Content Agent (multi-format content creation), and YouTube Thumbnail Agent (thumbnail concepts and directions).",
+        keywords: ["onboarding agent", "copywriting agent", "slides agent", "content agent", "YouTube thumbnail"],
+      },
+      {
+        question: "Can I build my own custom agent?",
+        answer:
+          "Yes. Use the Agent Builder to create custom agents with your own instructions, model, skills, and knowledge bases. Once published, they appear in the agent selector in the chat interface alongside built-in agents.",
+        keywords: ["agent builder", "custom agent", "create agent", "publish agent"],
+      },
+      {
+        question: "What happens to the model selector when an agent is active?",
+        answer:
+          "The model selector hides when a custom agent is active. The agent uses its own pre-configured model. When you deselect the agent (or start a new chat without @mentioning one), the model selector returns and you control model choice manually.",
+        keywords: ["model selector", "agent active", "model override", "agent model"],
+      },
+    ],
+  },
+  "project-organization": {
+    title: "Project Organization",
+    tldr: "Organize all your AI conversations into project folders from the sidebar. Default folders include Inbox, Content Gen, Copywriting, and Recent. Create new projects with the + button and expand any folder to see its threads.",
+    faqs: [
+      {
+        question: "What are Projects in Growthub?",
+        answer:
+          "Projects are folder-based workspaces that group related chat threads together. They appear in the left sidebar under the Projects section. Each project can hold multiple threads, making it easy to organize work by topic, client, or campaign.",
+        keywords: ["projects", "folders", "workspace organization", "chat threads"],
+      },
+      {
+        question: "What are the default project folders?",
+        answer:
+          "Growthub includes four default folders: Inbox (unorganized or incoming chats), Content Gen (AI content creation threads), Copywriting (writing and messaging work), and Recent (your most recently active threads across all projects).",
+        keywords: ["inbox", "content gen", "copywriting", "recent", "default folders"],
+      },
+      {
+        question: "How do I create a new project?",
+        answer:
+          "Click the + button next to 'Projects' in the left sidebar. Give your project a name and it will appear as a new folder. You can then move existing threads into it or start new chats directly within the project.",
+        keywords: ["create project", "new folder", "add project", "sidebar"],
+      },
+      {
+        question: "How do I navigate between projects and chats?",
+        answer:
+          "Click the arrow icon next to any project folder to expand it and see its threads. Click a thread to open it. Use 'New Chat' at the top of the sidebar to start a conversation, and use the breadcrumb inside the chat to see which project it belongs to.",
+        keywords: ["navigate projects", "expand folder", "switch project", "sidebar navigation"],
+      },
+      {
+        question: "Can I have multiple projects open at once?",
+        answer:
+          "The sidebar shows all projects simultaneously. You can expand multiple folders to browse threads. Only one chat thread is active in the main view at a time, but you can switch between threads from different projects instantly.",
+        keywords: ["multiple projects", "sidebar", "switch threads", "project navigation"],
+      },
+    ],
+  },
+  "thread-management": {
+    title: "Thread Management",
+    tldr: "Full control over every chat thread — rename inline, archive to reduce clutter, download as an export, or permanently delete with automatic KV unbind. All actions sync instantly across the sidebar, welcome screen, and any open chat panels.",
+    faqs: [
+      {
+        question: "What thread actions are available?",
+        answer:
+          "Each thread has four actions accessible from the More (···) menu: Rename (edit the thread title inline), Archive (hide the thread without deleting it), Download (export the thread as a file), and Delete (permanently remove the thread and unbind from the project).",
+        keywords: ["thread actions", "rename", "archive", "download", "delete"],
+      },
+      {
+        question: "How do I rename a thread?",
+        answer:
+          "Click the ··· menu on any thread row in the sidebar or recent chats, then select Rename. An inline input replaces the thread title — type the new name and press Enter to save, or Escape to cancel. The new name is saved immediately.",
+        keywords: ["rename thread", "inline rename", "thread title", "edit name"],
+      },
+      {
+        question: "What does archiving a thread do?",
+        answer:
+          "Archiving hides a thread from your active view and removes it from the project sidebar without permanently deleting it. The thread data is preserved and the thread is unbound from the project KV store. Useful for completed work you want to declutter.",
+        keywords: ["archive thread", "hide thread", "declutter", "preserve data"],
+      },
+      {
+        question: "What happens when I delete a thread?",
+        answer:
+          "Deleting a thread permanently removes it from the database and unbinds it from the project KV store. The thread disappears instantly from the sidebar, the welcome screen recent chats list, and any open panels — all synced via the threadDeleted event system.",
+        keywords: ["delete thread", "permanent delete", "KV unbind", "thread sync"],
+      },
+      {
+        question: "How does thread deletion sync across the UI?",
+        answer:
+          "When you delete a thread from any location (sidebar, recent chat row, or chat panel), a threadDeleted event fires. The welcome screen and sidebar both listen to this event and immediately filter out the deleted thread — no page refresh needed.",
+        keywords: ["thread sync", "UI sync", "threadDeleted event", "real-time update"],
+      },
+      {
+        question: "Can I download my chat thread?",
+        answer:
+          "Yes. Click ··· on any thread and select Download. This calls the thread export API and downloads the full conversation as a file, preserving all messages, agent outputs, and attachments for offline reference or sharing.",
+        keywords: ["download thread", "export chat", "conversation export", "offline access"],
+      },
+    ],
+  },
   "integrations-slack": {
     title: "Slack Integration",
     tldr: "Connect Slack to trigger agents from messages, app mentions, and reactions with automatic replies, thread management, and webhook-driven automation.",

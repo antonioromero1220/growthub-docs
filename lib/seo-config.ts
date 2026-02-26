@@ -493,6 +493,41 @@ export const PAGE_SEO_CONFIG: Record<string, PageSEO> = {
     path: "/platform/export-platform/custom-domains",
     keywords: ["custom domains", "white-label", "export domains", "branding"],
   },
+  "/platform/unified-chat": {
+    title: "Unified Chat Interface | Growthub Agent OS",
+    description:
+      "The single consolidated surface for all AI interactions in Growthub. Switch models, mention custom agents, organize projects, and manage threads from one place.",
+    path: "/platform/unified-chat",
+    keywords: ["unified chat", "chat interface", "AI chat", "workflow chat", "consolidated UI"],
+  },
+  "/platform/unified-chat/model-selection": {
+    title: "Model Selection | Choose Your AI Model",
+    description:
+      "Select and switch between AI models including GPT-5 Mini, Gemini 3.0 Flash, and Claude Haiku 4.5. Free and paid models with Reasoning, Web Search, Coding, and Documents capabilities.",
+    path: "/platform/unified-chat/model-selection",
+    keywords: ["model selection", "GPT-5 Mini", "Gemini 3.0 Flash", "Claude Haiku", "AI models", "reasoning"],
+  },
+  "/platform/unified-chat/custom-agents": {
+    title: "Custom Agents | AI Agents via @mention",
+    description:
+      "Access specialized AI agents directly in chat using @mention. Onboarding Agent, Copywriting Agent, Slides Generation, Content Agent, and YouTube Thumbnail Agent.",
+    path: "/platform/unified-chat/custom-agents",
+    keywords: ["custom agents", "agent mention", "copywriting agent", "slides generation", "content agent"],
+  },
+  "/platform/unified-chat/project-organization": {
+    title: "Project Organization | Folders and Chat Management",
+    description:
+      "Organize your AI conversations into projects and folders. Manage Inbox, Content Gen, Copywriting, and custom project folders from the sidebar.",
+    path: "/platform/unified-chat/project-organization",
+    keywords: ["project organization", "folders", "chat management", "projects sidebar", "workspace"],
+  },
+  "/platform/unified-chat/thread-management": {
+    title: "Thread Management | Rename, Archive, Download, Delete",
+    description:
+      "Manage your chat threads with full control — rename, archive, download exports, and delete threads with KV unbind. Cross-component sync keeps UI always in sync.",
+    path: "/platform/unified-chat/thread-management",
+    keywords: ["thread management", "rename thread", "archive", "download", "delete thread"],
+  },
   "/platform/agent-orchestration": {
     title: "Agent Orchestration | Multi-Agent Coordination System",
     description:

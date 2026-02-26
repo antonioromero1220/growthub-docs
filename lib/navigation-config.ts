@@ -187,6 +187,34 @@ export const navigationConfig: NavItem[] = [
         ],
       },
       {
+        id: "unified-chat",
+        title: "Unified Chat Interface",
+        href: "/platform/unified-chat",
+        description: "The single consolidated surface for all AI interactions — models, agents, projects, and threads",
+        subItems: [
+          {
+            id: "model-selection",
+            title: "Model Selection",
+            href: "/platform/unified-chat/model-selection",
+          },
+          {
+            id: "custom-agents",
+            title: "Custom Agents",
+            href: "/platform/unified-chat/custom-agents",
+          },
+          {
+            id: "project-organization",
+            title: "Project Organization",
+            href: "/platform/unified-chat/project-organization",
+          },
+          {
+            id: "thread-management",
+            title: "Thread Management",
+            href: "/platform/unified-chat/thread-management",
+          },
+        ],
+      },
+      {
         id: "agent-orchestration",
         title: "Agent Orchestration",
         href: "/platform/agent-orchestration",
@@ -326,6 +354,11 @@ export const pageSequence = [
   "/platform/export-platform/cms-publisher/custom-domains",
   "/platform/export-platform/batch-generation",
   "/platform/export-platform/custom-domains",
+  "/platform/unified-chat",
+  "/platform/unified-chat/model-selection",
+  "/platform/unified-chat/custom-agents",
+  "/platform/unified-chat/project-organization",
+  "/platform/unified-chat/thread-management",
   "/platform/agent-orchestration",
   "/platform/agent-orchestration/layer-1-input",
   "/platform/agent-orchestration/layer-2-processing",
