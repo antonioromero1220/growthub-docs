@@ -180,6 +180,11 @@ export const navigationConfig: NavItem[] = [
             href: "/platform/export-platform/custom-domains",
           },
           {
+            id: "export-webhook-integrations",
+            title: "Webhook Integrations",
+            href: "/platform/export-platform/webhook-integrations",
+          },
+          {
             id: "ghl-social-posting-export",
             title: "Social Posting",
             href: "/integrations/gohighlevel/social-posting",
@@ -326,6 +331,7 @@ export const pageSequence = [
   "/platform/export-platform/cms-publisher/custom-domains",
   "/platform/export-platform/batch-generation",
   "/platform/export-platform/custom-domains",
+  "/platform/export-platform/webhook-integrations",
   "/platform/agent-orchestration",
   "/platform/agent-orchestration/layer-1-input",
   "/platform/agent-orchestration/layer-2-processing",

@@ -493,6 +493,13 @@ export const PAGE_SEO_CONFIG: Record<string, PageSEO> = {
     path: "/platform/export-platform/custom-domains",
     keywords: ["custom domains", "white-label", "export domains", "branding"],
   },
+  "/platform/export-platform/webhook-integrations": {
+    title: "Webhook Integrations | Export Platform | Growthub Docs",
+    description:
+      "Connect exported agents to external systems via webhooks. Trigger workflows on form submissions, chat completions, or agent events with customizable payloads and retry logic.",
+    path: "/platform/export-platform/webhook-integrations",
+    keywords: ["webhook integrations", "webhooks", "API triggers", "event-driven", "payload"],
+  },
   "/platform/agent-orchestration": {
     title: "Agent Orchestration | Multi-Agent Coordination System",
     description:

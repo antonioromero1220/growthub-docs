@@ -581,6 +581,36 @@ export const tldrFaqContent: Record<string, TLDRFAQPage> = {
       },
     ],
   },
+  "webhook-integrations": {
+    title: "Webhook Integrations",
+    tldr: "Connect exported agents to external systems via webhooks. Trigger workflows on form submissions, chat completions, or agent events with customizable payloads and retry logic.",
+    faqs: [
+      {
+        question: "What webhook events are available?",
+        answer:
+          "Trigger webhooks on form submissions, chat completions, lead captures, agent task completions, and custom events. Each event includes a full payload with input data, outputs, and metadata.",
+        keywords: ["webhook events", "triggers", "form submissions", "chat completions"],
+      },
+      {
+        question: "How do I configure a webhook endpoint?",
+        answer:
+          "In Export Settings, add your webhook URL and select events to subscribe to. Configure headers, authentication (API key, Bearer token, or custom), and payload format (JSON or form-encoded).",
+        keywords: ["webhook setup", "endpoint configuration", "authentication", "payload format"],
+      },
+      {
+        question: "Does it support retry logic?",
+        answer:
+          "Yes, failed webhook deliveries automatically retry with exponential backoff (1s, 5s, 30s, 5m). View delivery logs in the Export Platform dashboard to debug failures.",
+        keywords: ["retry logic", "exponential backoff", "delivery logs", "error handling"],
+      },
+      {
+        question: "Can I transform the webhook payload?",
+        answer:
+          "Yes, use payload templates to customize the JSON structure. Map agent outputs to your external system's expected fields using Handlebars-style templates.",
+        keywords: ["payload templates", "data transformation", "field mapping", "Handlebars"],
+      },
+    ],
+  },
   "integrations-slack": {
     title: "Slack Integration",
     tldr: "Connect Slack to trigger agents from messages, app mentions, and reactions with automatic replies, thread management, and webhook-driven automation.",
