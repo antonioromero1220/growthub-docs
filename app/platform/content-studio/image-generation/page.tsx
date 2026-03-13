@@ -131,7 +131,7 @@ export default function ImageGeneration() {
         </PageContent>
 
         <PageFooter
-          previousPage={{ label: "Video Generation", url: "/platform/content-studio/video-generation" }}
+          previousPage={{ label: "GH Max Mode", url: "/platform/content-studio/gh-max-mode" }}
           nextPage={{ label: "Scene Continuity", url: "/platform/content-studio/scene-continuity" }}
         />
       </div>
