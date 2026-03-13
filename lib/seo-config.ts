@@ -339,6 +339,48 @@ export const PAGE_SEO_CONFIG: Record<string, PageSEO> = {
     path: "/platform/agent-builder/inputs/image-input-node",
     keywords: ["image input", "visual processing", "OCR", "image analysis"],
   },
+  "/platform/gh-max-mode": {
+    title: "GH Max Mode | AI-Powered Long-Running Agent Workflows",
+    description:
+      "GH Max Mode activates Growthub's most powerful AI agents for end-to-end video production, Meta ads, research, and more. Run 1,000+ production pipelines with zero manual work.",
+    path: "/platform/gh-max-mode",
+    keywords: ["GH Max Mode", "AI agents", "video generation", "Meta ads", "autonomous workflows"],
+  },
+  "/platform/gh-max-mode/overview": {
+    title: "What is GH Max Mode | GH Max Overview",
+    description:
+      "GH Max Mode turns Growthub into a fully autonomous production engine. Learn how custom agents handle planning, brief creation, execution, and delivery end-to-end.",
+    path: "/platform/gh-max-mode/overview",
+    keywords: ["GH Max Mode overview", "autonomous agents", "AI production engine", "how it works"],
+  },
+  "/platform/gh-max-mode/video-generation-agent": {
+    title: "Video Generation Agent | GH Max Mode",
+    description:
+      "The GH Max Video Generation Agent plans, scripts, generates, and compiles multi-scene video campaigns automatically. From brief to final video in under 10 minutes.",
+    path: "/platform/gh-max-mode/video-generation-agent",
+    keywords: ["video generation agent", "GH Max video", "multi-scene video", "AI video production"],
+  },
+  "/platform/gh-max-mode/meta-ads-agent": {
+    title: "Meta Ads Agent | GH Max Mode",
+    description:
+      "The GH Max Meta Ads Agent generates complete ad campaigns with headlines, copy, creatives, and audience targeting recommendations—automatically aligned to your brand.",
+    path: "/platform/gh-max-mode/meta-ads-agent",
+    keywords: ["Meta ads agent", "GH Max ads", "AI ad generation", "Facebook ads automation"],
+  },
+  "/platform/gh-max-mode/browser-research-agent": {
+    title: "Browser Research Agent | GH Max Mode",
+    description:
+      "The GH Max Browser Research Agent autonomously browses the web, captures competitive intelligence, and delivers structured analysis summaries directly into your workspace.",
+    path: "/platform/gh-max-mode/browser-research-agent",
+    keywords: ["browser research agent", "web research AI", "competitive intelligence", "autonomous browsing"],
+  },
+  "/platform/gh-max-mode/ai-actor-studio": {
+    title: "AI Actor Studio | GH Max Mode",
+    description:
+      "Generate, save, freeze, and reuse AI actors across multi-scene video campaigns. Maintain visual identity consistency without managing technical details.",
+    path: "/platform/gh-max-mode/ai-actor-studio",
+    keywords: ["AI Actor Studio", "AI actors", "video continuity", "actor generation", "brand identity"],
+  },
   "/platform/content-studio": {
     title: "Content Studio | AI-Powered Content Generation",
     description:

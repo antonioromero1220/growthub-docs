@@ -5,6 +5,180 @@ export interface TLDRFAQPage {
 }
 
 export const tldrFaqContent: Record<string, TLDRFAQPage> = {
+  "gh-max-mode": {
+    title: "GH Max Mode",
+    tldr: "GH Max Mode activates Growthub's most powerful autonomous agents. Select a GH Max agent, answer a few questions, and it handles planning, brief creation, production, and delivery end-to-end — powering 1,000+ real pipelines across video, ads, and research.",
+    faqs: [
+      {
+        question: "What is GH Max Mode?",
+        answer:
+          "GH Max Mode is Growthub's long-running agent mode. When you activate it, a specialized AI agent takes over the full workflow — from asking clarifying questions and generating a creative brief, to executing every production step and delivering a finished output. No manual hand-holding required.",
+        keywords: ["GH Max Mode", "AI agent", "autonomous", "long-running"],
+      },
+      {
+        question: "Which agents are available in GH Max Mode?",
+        answer:
+          "Currently available: Video Generation Agent (multi-scene video campaigns), Meta Ads Agent (full ad campaigns with copy and creatives), Browser Research Agent (autonomous web research and analysis), and AI Actor Studio (consistent human identity across video scenes).",
+        keywords: ["GH Max agents", "video agent", "Meta ads agent", "browser research agent"],
+      },
+      {
+        question: "How is GH Max Mode different from regular agent runs?",
+        answer:
+          "Standard agents execute a single configured task. GH Max agents run multi-step autonomous workflows: they plan, ask clarifying questions, synthesize a brief, execute production steps, and compile a final deliverable — all inside one session without you managing each step.",
+        keywords: ["GH Max vs standard", "autonomous workflow", "multi-step", "agentic"],
+      },
+      {
+        question: "Do I need technical skills to use GH Max Mode?",
+        answer:
+          "No. GH Max Mode is built for marketers and growth teams. You describe what you want, answer a few questions, and the agent does the work. No pipeline configuration, no prompt engineering, no technical setup required.",
+        keywords: ["no-code", "marketer friendly", "ease of use", "non-technical"],
+      },
+    ],
+  },
+  "gh-max-overview": {
+    title: "What is GH Max Mode",
+    tldr: "GH Max Mode is Growthub's autonomous production engine. Select an agent, give it a goal, and it plans, produces, and delivers — from video campaigns to ad creative to research reports — without you managing each step.",
+    faqs: [
+      {
+        question: "What does GH Max Mode actually do?",
+        answer:
+          "It activates a specialized AI agent that runs a complete production workflow from start to finish. For video: it plans scenes, generates a creative brief, builds every clip, and compiles the final video. For ads: it generates copy, headlines, and creative direction. For research: it browses the web and delivers a structured analysis.",
+        keywords: ["GH Max Mode", "production workflow", "AI agent", "end-to-end"],
+      },
+      {
+        question: "Where do I find GH Max Mode in Growthub?",
+        answer:
+          "GH Max Mode is accessible from the main agent interface. Look for the GH Max icon or toggle in your chat input bar when inside a session. Once activated, you select which GH Max agent you want to run.",
+        keywords: ["where to find", "GH Max access", "chat input", "agent interface"],
+      },
+      {
+        question: "Can GH Max Mode use my Brand Kit?",
+        answer:
+          "Yes. Every GH Max agent automatically pulls from your active Brand Kit — voice guidelines, visual assets, ICP profile, and brand fidelity settings all flow into the agent's planning and execution steps without you manually applying them.",
+        keywords: ["Brand Kit", "brand fidelity", "visual identity", "automated branding"],
+      },
+    ],
+  },
+  "video-generation-agent": {
+    title: "Video Generation Agent",
+    tldr: "The GH Max Video Generation Agent creates complete multi-scene video campaigns from a single brief. It plans your campaign, generates a creative brief, builds each scene, and compiles the final video — start to finish in under 10 minutes.",
+    faqs: [
+      {
+        question: "What does the Video Generation Agent do?",
+        answer:
+          "It runs the complete video production workflow autonomously. You describe your campaign goal, it asks 3 clarifying questions, synthesizes a creative brief, generates individual video scenes, and compiles them into a final deliverable with transitions — no manual editing needed.",
+        keywords: ["video generation", "multi-scene", "autonomous video", "campaign production"],
+      },
+      {
+        question: "How long does it take to generate a full video?",
+        answer:
+          "Creative brief: about 30 seconds. Scene generation: 2-3 minutes. Final video compilation with transitions: 3-5 minutes. Total end-to-end is under 10 minutes for a complete multi-scene campaign video.",
+        keywords: ["video generation time", "how long", "production speed", "timeline"],
+      },
+      {
+        question: "What is the creative brief and why does it matter?",
+        answer:
+          "The creative brief is the AI's production plan for your video. It includes scene-by-scene breakdowns, hooks, calls-to-action, audience targeting, and visual direction — modeled after professional creative ops workflows. You review and approve it before production begins.",
+        keywords: ["creative brief", "scene breakdown", "hooks", "CTA", "production plan"],
+      },
+      {
+        question: "Can I use my own actors or brand assets in the video?",
+        answer:
+          "Yes. You can generate an AI actor, upload a real reference, or reuse a saved actor from AI Actor Studio. Your Brand Kit assets — logos, colors, product images — are automatically included. You can also add frame anchors for scene continuity.",
+        keywords: ["AI actors", "brand assets", "reference images", "frame anchors"],
+      },
+      {
+        question: "What video formats are available?",
+        answer:
+          "The Video Generation Agent supports multiple ad formats including UGC testimonial style and product benefits style. Aspect ratios are configurable. Additional formats are continuously being added.",
+        keywords: ["video formats", "UGC", "product benefits", "aspect ratio", "ad formats"],
+      },
+    ],
+  },
+  "meta-ads-agent": {
+    title: "Meta Ads Agent",
+    tldr: "The GH Max Meta Ads Agent creates complete ad campaigns aligned to your brand — headlines, primary copy, creative direction, and audience targeting — all generated autonomously from your campaign brief.",
+    faqs: [
+      {
+        question: "What does the Meta Ads Agent produce?",
+        answer:
+          "A complete ad campaign package: primary ad copy, attention-grabbing headlines, creative visual direction, audience targeting recommendations, and multiple ad variations — all aligned to your Brand Kit and ICP.",
+        keywords: ["Meta ads", "ad copy", "headlines", "creative direction", "audience targeting"],
+      },
+      {
+        question: "Does it connect directly to Meta Ads Manager?",
+        answer:
+          "The Meta Ads Agent generates campaign-ready assets and structured output. Integration with Meta Ads Manager for direct publishing is part of the platform roadmap. Current output is ready to copy directly into your ad creation workflow.",
+        keywords: ["Meta Ads Manager", "direct integration", "publishing", "ad creation"],
+      },
+      {
+        question: "How does it use my Brand Kit?",
+        answer:
+          "Your Brand Kit's ICP (ideal customer profile), brand voice, and visual identity guidelines are passed directly into the agent's planning process. Every piece of copy and creative direction reflects your brand positioning automatically.",
+        keywords: ["Brand Kit", "ICP", "brand voice", "positioning"],
+      },
+    ],
+  },
+  "browser-research-agent": {
+    title: "Browser Research Agent",
+    tldr: "The GH Max Browser Research Agent autonomously browses the web, captures content from any URL, and delivers structured competitive analysis and research summaries directly into your Growthub session.",
+    faqs: [
+      {
+        question: "What does the Browser Research Agent do?",
+        answer:
+          "It takes a URL or research goal, autonomously navigates to relevant web pages, captures content and data, analyzes it using AI, and delivers a structured summary report inside your session — without you manually browsing or copy-pasting anything.",
+        keywords: ["browser research", "web browsing", "autonomous research", "competitive analysis"],
+      },
+      {
+        question: "What kind of research can it do?",
+        answer:
+          "Competitor analysis, market research, content audits, pricing comparisons, social media monitoring, lead enrichment, and any task requiring structured information gathering from public web pages.",
+        keywords: ["competitor analysis", "market research", "content audit", "lead enrichment"],
+      },
+      {
+        question: "Can I use the research output in other agents?",
+        answer:
+          "Yes. Research outputs are available as session artifacts and can be saved to your Knowledge System. Other agents can reference this context for content generation, ad copy, strategy briefs, and more.",
+        keywords: ["research output", "knowledge system", "session artifacts", "context sharing"],
+      },
+    ],
+  },
+  "gh-max-ai-actor-studio": {
+    title: "AI Actor Studio",
+    tldr: "AI Actor Studio lets you generate, save, freeze, and reuse AI actors across all your video scenes. Once you freeze an actor, it carries through every scene automatically — keeping your video campaigns visually consistent without any manual work.",
+    faqs: [
+      {
+        question: "What is AI Actor Studio?",
+        answer:
+          "It is a dedicated tool inside GH Max Mode for creating and managing AI-generated human actors. You generate or upload an actor once, approve and freeze them, and they automatically appear consistently across every scene in your video campaign.",
+        keywords: ["AI Actor Studio", "actor generation", "video continuity", "consistent identity"],
+      },
+      {
+        question: "How do I create an AI actor?",
+        answer:
+          "Open AI Actor Studio from the video controls. Describe the person you want — their appearance, role, style — and the AI generates a photorealistic actor. Alternatively, upload a real reference image and the system analyzes it to create your actor profile.",
+        keywords: ["create AI actor", "actor generation", "upload reference", "photorealistic"],
+      },
+      {
+        question: "What does freezing an actor do?",
+        answer:
+          "Freezing locks your actor's appearance and commits them as a visual anchor for the video. Once frozen, the actor automatically flows through every scene in your campaign maintaining the same identity — no re-selecting or re-attaching per scene.",
+        keywords: ["freeze actor", "visual anchor", "scene continuity", "commit actor"],
+      },
+      {
+        question: "Can I save and reuse actors across campaigns?",
+        answer:
+          "Yes. Save any actor to your library and reuse them in future campaigns. You can rename, duplicate, or share actors with team members — giving your whole team access to consistent brand characters.",
+        keywords: ["save actor", "reuse actors", "actor library", "team sharing"],
+      },
+      {
+        question: "Does the actor replace my brand assets and creative brief?",
+        answer:
+          "No. The actor is a continuity layer only. Your approved creative brief, brand kit, and product references remain the primary drivers of each scene. The actor maintains visual identity while your campaign story and brand intent stay dominant.",
+        keywords: ["actor vs brand assets", "creative brief", "brand fidelity", "continuity only"],
+      },
+    ],
+  },
   "getting-started": {
     title: "Getting Started",
     tldr: "Quick start guide to Growthub Agent OS - create Brand Kits, build custom agents, generate content, and deploy in minutes using the unified growth platform.",

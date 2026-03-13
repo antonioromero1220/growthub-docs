@@ -12,6 +12,39 @@ export const navigationConfig: NavItem[] = [
         description: "High-level overview of Growthub AGENT OS",
       },
       {
+        id: "gh-max-mode",
+        title: "GH Max Mode",
+        href: "/platform/gh-max-mode",
+        description: "Long-running AI agent workflows for video, ads, and research",
+        subItems: [
+          {
+            id: "gh-max-overview",
+            title: "What is GH Max Mode",
+            href: "/platform/gh-max-mode/overview",
+          },
+          {
+            id: "gh-max-video",
+            title: "Video Generation Agent",
+            href: "/platform/gh-max-mode/video-generation-agent",
+          },
+          {
+            id: "gh-max-meta-ads",
+            title: "Meta Ads Agent",
+            href: "/platform/gh-max-mode/meta-ads-agent",
+          },
+          {
+            id: "gh-max-browser",
+            title: "Browser Research Agent",
+            href: "/platform/gh-max-mode/browser-research-agent",
+          },
+          {
+            id: "gh-max-ai-actor",
+            title: "AI Actor Studio",
+            href: "/platform/gh-max-mode/ai-actor-studio",
+          },
+        ],
+      },
+      {
         id: "agent-builder",
         title: "Agent Builder",
         href: "/platform/agent-builder",
@@ -311,6 +344,12 @@ export const pageSequence = [
   "/",
   "/getting-started",
   "/platform/platform-overview",
+  "/platform/gh-max-mode",
+  "/platform/gh-max-mode/overview",
+  "/platform/gh-max-mode/video-generation-agent",
+  "/platform/gh-max-mode/meta-ads-agent",
+  "/platform/gh-max-mode/browser-research-agent",
+  "/platform/gh-max-mode/ai-actor-studio",
   "/platform/agent-builder",
   "/platform/agent-builder/inputs",
   "/platform/agent-builder/inputs/input-node",
