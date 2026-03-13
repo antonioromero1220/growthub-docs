@@ -11,9 +11,16 @@ export const metadata: Metadata = generatePageMetadata(PAGE_SEO_CONFIG["/platfor
 export default function WebhookIntegrationsPage() {
   return (
     <main className="mx-auto max-w-4xl flex-1 overflow-auto">
+      {/* Structured Data */}
+      <PageSEO
+        title="Webhook Integrations | Export Platform"
+        description="Connect exported agents to external systems via webhooks. Trigger workflows on form submissions, chat completions, or agent events with customizable payloads and retry logic."
+      />
+
       <div className="space-y-8 px-6 py-8">
         <PageHeader
           breadcrumbs={[
+            { label: "AGENT OS PLATFORM", url: "/platform/platform-overview" },
             { label: "Export Platform", url: "/platform/export-platform" },
             { label: "Webhook Integrations" },
           ]}
@@ -99,9 +106,9 @@ export default function WebhookIntegrationsPage() {
               in the Export Platform dashboard.
             </p>
           </section>
-        </PageContent>
 
-        <TLDRFAQSection pageKey="webhook-integrations" />
+          <TLDRFAQSection pageKey="webhook-integrations" />
+        </PageContent>
 
         <PageFooter
           previousPage={{ label: "Custom Domains", url: "/platform/export-platform/custom-domains" }}
