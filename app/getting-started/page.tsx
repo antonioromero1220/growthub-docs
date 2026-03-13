@@ -38,41 +38,58 @@ export default function GettingStarted() {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold">What is Growthub?</h2>
             <p className="text-base leading-relaxed">
-              Growthub is the first fully autonomous B2B SaaS growth engine—one product with six core
-              features in one unified orchestration layer. The integration layer allows Brand Kits, Knowledge Items,
-              and Agent Skills to flow seamlessly across all tools, creating a natural flywheel effect.
+              Growthub is the first fully autonomous B2B SaaS growth engine — one platform where AI agents plan, produce, and deliver real growth work for you. Over 1,000 production pipelines run on Growthub every day, powering video campaigns, ad creative, competitive research, and content publishing without manual execution.
             </p>
+            <p className="text-base leading-relaxed text-muted-foreground">
+              Everything runs inside a unified workspace where your Brand Kits, Knowledge Items, and Agent Skills flow automatically across every tool — creating a compounding growth flywheel the more you use it.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold">Start With GH Max Mode</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              The fastest way to see what Growthub can do is GH Max Mode — the platform's fully autonomous production engine. Select a GH Max agent, describe your goal, and it handles everything from planning to delivery. No setup required, no technical configuration needed.
+            </p>
+            <div className="grid gap-3 sm:grid-cols-2 mt-2">
+              {[
+                ["Video Generation Agent", "Multi-scene campaign video from brief to final in under 10 min", "/platform/gh-max-mode/video-generation-agent"],
+                ["Meta Ads Agent", "Full ad campaign with copy, headlines, and creative direction", "/platform/gh-max-mode/meta-ads-agent"],
+                ["Browser Research Agent", "Autonomous competitive intelligence from any URL", "/platform/gh-max-mode/browser-research-agent"],
+                ["AI Actor Studio", "Consistent AI human identity across every video scene", "/platform/gh-max-mode/ai-actor-studio"],
+              ].map(([title, desc, href]) => (
+                <a key={href} href={href} className="rounded-lg border border-border bg-card p-4 space-y-1 hover:bg-accent transition-colors">
+                  <p className="font-semibold text-sm">{title}</p>
+                  <p className="text-xs text-muted-foreground">{desc}</p>
+                </a>
+              ))}
+            </div>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-bold">Core Concepts</h2>
             <div className="space-y-4">
               <div>
-                <h3 className="font-semibold mb-2">1. Brand Kits</h3>
+                <h3 className="font-semibold mb-1">Brand Kits</h3>
                 <p className="text-muted-foreground">
-                  Create unlimited brand profiles with target customer profiles (ICP), voice guidelines, and visual
-                  assets. These flow globally across the platform.
+                  Create unlimited brand profiles with ICP, voice guidelines, and visual assets. Brand Kits flow automatically into every agent, every GH Max workflow, and every piece of content generated on the platform.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">2. Knowledge Items</h3>
+                <h3 className="font-semibold mb-1">Knowledge Items</h3>
                 <p className="text-muted-foreground">
-                  Store and share collective intelligence across teams and agents. Generate thread summaries and convert
-                  to audio.
+                  Store and share collective intelligence across teams and agents. Research outputs, session summaries, and documents become reusable context any agent can access.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">3. Agent Skills</h3>
+                <h3 className="font-semibold mb-1">Agent Skills</h3>
                 <p className="text-muted-foreground">
-                  Equip custom agents with tools and functions. Swap between 40+ LLM models in a single agent
-                  configuration.
+                  Equip custom agents with tools and functions. Swap between 40+ LLM models in a single agent configuration and combine skills for advanced workflows.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">4. Content Generation</h3>
+                <h3 className="font-semibold mb-1">Sessions</h3>
                 <p className="text-muted-foreground">
-                  Create on-brand multi-modal content. Use RLHF brand training to automatically align generated content
-                  with your brand.
+                  Every project runs inside a session — a persistent workspace that holds your intent, execution history, artifacts, and outputs together. GH Max agents run inside sessions, keeping every step connected.
                 </p>
               </div>
             </div>
@@ -82,24 +99,19 @@ export default function GettingStarted() {
             <h2 className="text-2xl font-bold">Next Steps</h2>
             <ol className="space-y-3 list-decimal list-inside text-muted-foreground">
               <li>
-                <span className="font-semibold text-foreground">Set up your first Brand Kit</span> - Define your brand
-                voice and visual identity
+                <span className="font-semibold text-foreground">Try GH Max Mode</span> — Run your first autonomous agent workflow with <a href="/platform/gh-max-mode" className="underline underline-offset-4 text-foreground">GH Max Mode</a>
               </li>
               <li>
-                <span className="font-semibold text-foreground">Create a custom agent</span> - Use the Agent Builder to
-                create your first automation
+                <span className="font-semibold text-foreground">Set up your Brand Kit</span> — Define your brand voice, ICP, and visual assets so every agent output is on-brand by default
               </li>
               <li>
-                <span className="font-semibold text-foreground">Generate content</span> - Use Content Studio to create
-                multi-modal assets
+                <span className="font-semibold text-foreground">Build a custom agent</span> — Use the Agent Builder to create your first automated workflow
               </li>
               <li>
-                <span className="font-semibold text-foreground">Deploy and share</span> - Export your agent via the
-                Export Platform
+                <span className="font-semibold text-foreground">Generate content</span> — Use Content Studio to create multi-modal assets aligned to your brand
               </li>
               <li>
-                <span className="font-semibold text-foreground">Build workflows</span> - Set up event-driven
-                orchestration with Workflow Engine
+                <span className="font-semibold text-foreground">Deploy and share</span> — Export your agent via the Export Platform with a public URL
               </li>
             </ol>
           </section>

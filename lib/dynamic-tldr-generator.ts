@@ -16,7 +16,12 @@ export async function generateDynamicContent(
   slug: string,
   pathname: string,
 ): Promise<{ tldr: string; faqs: Array<{ question: string; answer: string; keywords?: string[] }> }> {
-  // Try to get from config first
+  // Try exact full slug first (e.g. "cms-publisher-shopify-integration")
+  if (tldrFaqContent[slug]) {
+    return tldrFaqContent[slug]
+  }
+
+  // Fallback: try first-two-segment slug (e.g. "export-platform")
   const mainSlug = slug.split("-").slice(0, 2).join("-")
   if (tldrFaqContent[mainSlug]) {
     return tldrFaqContent[mainSlug]

@@ -12,6 +12,39 @@ export const navigationConfig: NavItem[] = [
         description: "High-level overview of Growthub AGENT OS",
       },
       {
+        id: "gh-max-mode",
+        title: "GH Max Mode",
+        href: "/platform/gh-max-mode",
+        description: "Long-running AI agent workflows for video, ads, and research",
+        subItems: [
+          {
+            id: "gh-max-overview",
+            title: "What is GH Max Mode",
+            href: "/platform/gh-max-mode/overview",
+          },
+          {
+            id: "gh-max-video",
+            title: "Video Generation Agent",
+            href: "/platform/gh-max-mode/video-generation-agent",
+          },
+          {
+            id: "gh-max-meta-ads",
+            title: "Meta Ads Agent",
+            href: "/platform/gh-max-mode/meta-ads-agent",
+          },
+          {
+            id: "gh-max-browser",
+            title: "Browser Research Agent",
+            href: "/platform/gh-max-mode/browser-research-agent",
+          },
+          {
+            id: "gh-max-ai-actor",
+            title: "AI Actor Studio",
+            href: "/platform/gh-max-mode/ai-actor-studio",
+          },
+        ],
+      },
+      {
         id: "agent-builder",
         title: "Agent Builder",
         href: "/platform/agent-builder",
@@ -64,6 +97,16 @@ export const navigationConfig: NavItem[] = [
             id: "video-generation",
             title: "Video Generation",
             href: "/platform/content-studio/video-generation",
+          },
+          {
+            id: "ai-actor-studio",
+            title: "AI Actor Studio",
+            href: "/platform/content-studio/ai-actor-studio",
+          },
+          {
+            id: "gh-max-mode",
+            title: "GH Max Mode",
+            href: "/platform/content-studio/gh-max-mode",
           },
           {
             id: "image-generation",
@@ -178,6 +221,11 @@ export const navigationConfig: NavItem[] = [
             id: "export-custom-domains",
             title: "Custom Domains",
             href: "/platform/export-platform/custom-domains",
+          },
+          {
+            id: "export-webhook-integrations",
+            title: "Webhook Integrations",
+            href: "/platform/export-platform/webhook-integrations",
           },
           {
             id: "ghl-social-posting-export",
@@ -296,6 +344,12 @@ export const pageSequence = [
   "/",
   "/getting-started",
   "/platform/platform-overview",
+  "/platform/gh-max-mode",
+  "/platform/gh-max-mode/overview",
+  "/platform/gh-max-mode/video-generation-agent",
+  "/platform/gh-max-mode/meta-ads-agent",
+  "/platform/gh-max-mode/browser-research-agent",
+  "/platform/gh-max-mode/ai-actor-studio",
   "/platform/agent-builder",
   "/platform/agent-builder/inputs",
   "/platform/agent-builder/inputs/input-node",
@@ -306,6 +360,8 @@ export const pageSequence = [
   "/platform/agent-builder/inputs/image-input-node",
   "/platform/content-studio",
   "/platform/content-studio/video-generation",
+  "/platform/content-studio/ai-actor-studio",
+  "/platform/content-studio/gh-max-mode",
   "/platform/content-studio/image-generation",
   "/platform/content-studio/scene-continuity",
   "/platform/content-studio/brand-assets",
@@ -326,6 +382,7 @@ export const pageSequence = [
   "/platform/export-platform/cms-publisher/custom-domains",
   "/platform/export-platform/batch-generation",
   "/platform/export-platform/custom-domains",
+  "/platform/export-platform/webhook-integrations",
   "/platform/agent-orchestration",
   "/platform/agent-orchestration/layer-1-input",
   "/platform/agent-orchestration/layer-2-processing",

@@ -124,7 +124,7 @@ export default function VideoGeneration() {
 
         <PageFooter
           previousPage={{ label: "Content Studio", url: "/platform/content-studio" }}
-          nextPage={{ label: "Image Generation", url: "/platform/content-studio/image-generation" }}
+          nextPage={{ label: "AI Actor Studio", url: "/platform/content-studio/ai-actor-studio" }}
         />
       </div>
     </main>
