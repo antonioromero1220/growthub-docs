@@ -66,6 +66,16 @@ export const navigationConfig: NavItem[] = [
             href: "/platform/content-studio/video-generation",
           },
           {
+            id: "ai-actor-studio",
+            title: "AI Actor Studio",
+            href: "/platform/content-studio/ai-actor-studio",
+          },
+          {
+            id: "gh-max-mode",
+            title: "GH Max Mode",
+            href: "/platform/content-studio/gh-max-mode",
+          },
+          {
             id: "image-generation",
             title: "Image Generation",
             href: "/platform/content-studio/image-generation",
@@ -311,6 +321,8 @@ export const pageSequence = [
   "/platform/agent-builder/inputs/image-input-node",
   "/platform/content-studio",
   "/platform/content-studio/video-generation",
+  "/platform/content-studio/ai-actor-studio",
+  "/platform/content-studio/gh-max-mode",
   "/platform/content-studio/image-generation",
   "/platform/content-studio/scene-continuity",
   "/platform/content-studio/brand-assets",

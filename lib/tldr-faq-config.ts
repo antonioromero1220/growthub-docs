@@ -611,6 +611,84 @@ export const tldrFaqContent: Record<string, TLDRFAQPage> = {
       },
     ],
   },
+  "ai-actor-studio": {
+    title: "AI Actor Studio",
+    tldr: "Generate, save, and manage AI actors on-demand through prompting. Freeze actors for video generation, share with team members, and maintain consistent character representation across multi-scene campaigns.",
+    faqs: [
+      {
+        question: "How do I create an AI actor?",
+        answer:
+          "In the Video Generation agent pre-configuration, click AI Actor Studio. Describe your desired actor (age, appearance, style, persona) or upload a reference image. Click Generate to create your actor, then Save to add it to your library.",
+        keywords: ["create actor", "AI actor", "actor generation", "character creation"],
+      },
+      {
+        question: "What does freezing an actor do?",
+        answer:
+          "Freezing an actor locks their appearance for use in video generation. When frozen, the actor maintains visual consistency across all scenes and video outputs, ensuring the same character appears throughout your campaign.",
+        keywords: ["freeze actor", "actor consistency", "visual continuity", "character lock"],
+      },
+      {
+        question: "Can I share actors with my team?",
+        answer:
+          "Yes, go to Share Settings under your saved actor and invite collaborators by email. Team members with access can use the shared actor in their own video generation workflows.",
+        keywords: ["share actors", "team collaboration", "actor sharing", "collaborators"],
+      },
+      {
+        question: "How do actors work with Brand Kit?",
+        answer:
+          "Actors can be combined with Brand Kit assets and reference images. Toggle Brand Kit Fidelity to pass brand guidelines to the agent, ensuring generated videos match your brand's visual identity alongside the AI actor.",
+        keywords: ["Brand Kit", "actor integration", "brand fidelity", "visual identity"],
+      },
+      {
+        question: "What actor types work best for different use cases?",
+        answer:
+          "For B2B enterprise content, use professional middle-aged business owners. For e-commerce, use relatable everyday consumers. For UGC testimonials, use diverse actors matching your target demographic.",
+        keywords: ["actor types", "use cases", "B2B actors", "e-commerce actors", "UGC"],
+      },
+    ],
+  },
+  "gh-max-mode": {
+    title: "GH Max Mode",
+    tldr: "Long-running agentic AI workflows for end-to-end video generation. Advanced planning with clarifying questions, AI-powered creative brief generation, multi-scene compilation, and automated transitions with scene track management.",
+    faqs: [
+      {
+        question: "What is GH Max Mode?",
+        answer:
+          "GH Max Mode is where long-running AI agent tasks perform their work. Access it from the chat input on the main page. It handles complex video generation workflows including creative brief compilation, multi-scene generation, and final video processing.",
+        keywords: ["GH Max Mode", "agentic workflow", "long-running tasks", "video agent"],
+      },
+      {
+        question: "How does advanced planning work?",
+        answer:
+          "After selecting the Video Generation Agent, the advanced planning step synthesizes your request and asks 3 clarifying questions to better understand your video requirements. Answer these questions (or skip them) to generate a comprehensive creative brief.",
+        keywords: ["advanced planning", "clarifying questions", "creative brief", "video planning"],
+      },
+      {
+        question: "What is the creative briefing process?",
+        answer:
+          "The agent generates a full creative brief with scene breakdowns, hooks, and CTAs modeled after proven Creative OS workflows. This takes about 30 seconds and includes persona targeting, visual direction, and messaging framework.",
+        keywords: ["creative brief", "Creative OS", "scene breakdown", "hooks", "CTA"],
+      },
+      {
+        question: "How long does video generation take?",
+        answer:
+          "Scene generation takes approximately 3 minutes. Final video processing (concatenation, transitions, audio sync) takes another 3-5 minutes. Total end-to-end workflow completes in under 10 minutes.",
+        keywords: ["generation time", "processing time", "video timeline", "workflow duration"],
+      },
+      {
+        question: "What is the Scene Track?",
+        answer:
+          "The Scene Track is your video timeline showing all generated blocks. Preview individual clips by hovering, view the full audio track, and see all scenes before processing the final concatenated output with automatic transitions.",
+        keywords: ["Scene Track", "video timeline", "blocks", "preview", "transitions"],
+      },
+      {
+        question: "How do teams collaborate on video generation?",
+        answer:
+          "Teams share threads as AI cloud work sessions. Each thread contains the full generation history, creative briefs, and video outputs. Share threads with team members to collaborate on creative strategy and hand off to video editors.",
+        keywords: ["team collaboration", "threads", "work sessions", "handoff", "editors"],
+      },
+    ],
+  },
   "integrations-slack": {
     title: "Slack Integration",
     tldr: "Connect Slack to trigger agents from messages, app mentions, and reactions with automatic replies, thread management, and webhook-driven automation.",
