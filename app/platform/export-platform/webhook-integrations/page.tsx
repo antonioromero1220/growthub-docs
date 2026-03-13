@@ -3,11 +3,10 @@ import { PageHeader } from "@/components/page-header"
 import { PageContent } from "@/components/page-content"
 import { PageFooter } from "@/components/page-footer"
 import { TLDRFAQSection } from "@/components/tldr-faq-section"
+import { generatePageMetadata, PAGE_SEO_CONFIG } from "@/lib/seo-config"
+import { PageSEO } from "@/components/seo/page-seo"
 
-export const metadata: Metadata = {
-  title: "Webhook Integrations | Export Platform | Growthub Docs",
-  description: "Connect exported agents to external systems via webhooks with customizable payloads and retry logic.",
-}
+export const metadata: Metadata = generatePageMetadata(PAGE_SEO_CONFIG["/platform/export-platform/webhook-integrations"])
 
 export default function WebhookIntegrationsPage() {
   return (
