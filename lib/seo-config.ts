@@ -353,6 +353,20 @@ export const PAGE_SEO_CONFIG: Record<string, PageSEO> = {
     path: "/platform/content-studio/video-generation",
     keywords: ["video generation", "Sora 2", "VO 3.1", "AI video", "video ads", "UGC"],
   },
+  "/platform/content-studio/ai-actor-studio": {
+    title: "AI Actor Studio | Generate & Manage AI Actors",
+    description:
+      "Generate AI actors on-demand through prompting. Save, freeze, and share actors with team members for consistent character representation across multi-scene video campaigns.",
+    path: "/platform/content-studio/ai-actor-studio",
+    keywords: ["AI Actor Studio", "AI actors", "character generation", "actor management", "video actors", "UGC actors"],
+  },
+  "/platform/content-studio/gh-max-mode": {
+    title: "GH Max Mode | Agentic Video Generation Workflows",
+    description:
+      "Long-running AI agent workflows for end-to-end video generation. Advanced planning, creative brief generation, multi-scene compilation, and automated scene track management.",
+    path: "/platform/content-studio/gh-max-mode",
+    keywords: ["GH Max Mode", "agentic workflow", "video generation agent", "creative brief", "multi-scene", "scene track"],
+  },
   "/platform/content-studio/image-generation": {
     title: "Image Generation | AI Images with Brand Assets",
     description:
